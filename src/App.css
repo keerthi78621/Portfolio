@@ -1,0 +1,52 @@
+.App {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Floating shapes for background */
+.App::before {
+  content: '';
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(102, 126, 234, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: float 8s ease-in-out infinite;
+  z-index: -1;
+}
+
+.App::after {
+  content: '';
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(240, 147, 251, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: float 10s ease-in-out infinite reverse;
+  z-index: -1;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(10deg);
+  }
+}
+
+/* Section styling */
+section {
+  padding: 80px 20px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 15px;
+  }
+}
