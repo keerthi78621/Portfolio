@@ -3,15 +3,6 @@ import './About.css';
 import { FaDownload } from 'react-icons/fa';
 
 const About = () => {
-  const downloadResume = () => {
-    const link = document.createElement('a');
-    link.href = '/Resume_keerthika.pdf';
-    link.download = 'Resume_keerthika.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <section id="about" className="about">
       <div className="section-header">
