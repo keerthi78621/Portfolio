@@ -10,7 +10,6 @@ import Projects from './components/Projects';
 import CodingPractice from './components/CodingPractice';
 import Certifications from './components/Certifications';
 import Education from './components/Education';
-import Timeline from './components/Timeline';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
@@ -29,7 +28,6 @@ function App() {
       <CodingPractice />
       <Certifications />
       <Education />
-      <Timeline />
       <Contact />
       <Footer />
     </div>
