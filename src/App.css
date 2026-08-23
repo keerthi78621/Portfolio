@@ -1,0 +1,30 @@
+.App {
+  min-height: 100vh;
+  position: relative;
+  background: var(--bg-deep);
+}
+
+.App::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(ellipse at 20% 30%, rgba(212, 168, 83, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(45, 212, 191, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+section {
+  padding: 100px 24px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 70px 16px;
+  }
+}
