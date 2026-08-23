@@ -10,16 +10,7 @@ const Hero = () => {
       setTextIndex((prev) => (prev + 1) % titles.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
-
-  const downloadResume = () => {
-    const link = document.createElement('a');
-    link.href = '/Resume_keerthika.pdf';
-    link.download = 'Resume_keerthika.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  }, [titles.length]);
 
   return (
     <section id="home" className="hero">
@@ -38,9 +29,6 @@ const Hero = () => {
           <div className="hero-buttons">
             <button className="btn btn-primary" onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}>
               View My Projects
-            </button>
-            <button className="btn btn-secondary" onClick={downloadResume}>
-              Download Resume
             </button>
           </div>
           <div className="social-links">
