@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaJava, FaReact, FaJs, FaHtml5, FaCss3Alt, FaPython, FaGitAlt, FaGithub, FaDatabase } from 'react-icons/fa';
-import { SiSpringboot, SiMysql } from 'react-icons/si';
+import { FaReact, FaJs, FaPython, FaGitAlt, FaDatabase } from 'react-icons/fa';
+import { SiSpringboot } from 'react-icons/si';
 import './Skills.css';
 
 const Skills = () => {
